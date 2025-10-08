@@ -1,5 +1,5 @@
 with src as (
-  select payload from {{ source('onepiece_staging','STG_ONEPIECE_CHARACTERS') }}
+  select payload from {{ source('stg_onepiece','STG_ONEPIECE_CHARACTERS') }}
 ),
 flat as (
   select
