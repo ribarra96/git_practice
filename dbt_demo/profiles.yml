@@ -1,0 +1,11 @@
+snowflake_demo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: streamlit_apps
+      schema: dev
+      warehouse: compute_wh

@@ -1,0 +1,29 @@
+version: 2
+sources:
+- name: stg_onepiece
+  description: 'One Piece source data'
+  database: streamlit_apps
+  schema: ribarra_appss
+  tables:
+  - name: stg_onepiece_boats
+    description: 'Boats reference data'
+    columns:
+    - name: name
+      description: 'Primary key for boats'
+      data_tests:
+        - not_null
+  - name: stg_onepiece_fruits
+    description: 'Fruits reference data'
+    columns:
+    - name: fruit_name
+      description: 'Primary key for fruits'
+      data_tests:
+        - not_null
+  - name: stg_onepiece_characters
+    description: 'Characters reference data'
+    columns:
+    - name: fruit_name
+      description: 'Primary key for characters'
+      data_tests:
+        - not_null
+    
